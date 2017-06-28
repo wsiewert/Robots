@@ -8,6 +8,7 @@ namespace Robots
 {
     abstract class Robot
     {
+        string oilType;
         string material;
         string powerType;
         string color;
@@ -17,6 +18,21 @@ namespace Robots
         public Robot()
         {
 
+        }
+
+        public void TurnPowerOn()
+        {
+            powerOn = true;
+        }
+
+        public void TurnPowerOff()
+        {
+            powerOn = false;
+        }
+
+        public void ChangeColor(string color)
+        {
+            this.color = color;
         }
     }
 }
