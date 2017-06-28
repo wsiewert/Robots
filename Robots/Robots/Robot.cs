@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Robots
 {
-    class Robot
+    abstract class Robot
     {
         string material;
         string powerType;
