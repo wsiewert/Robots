@@ -12,12 +12,14 @@ namespace Robots
         string material;
         string powerType;
         string color;
+        int powerLevel;
         bool powerOn;
         bool isSelfAware;
 
         public Robot()
         {
-
+            this.color = "gray";
+            this.powerLevel = 0;
         }
 
         public void TurnPowerOn()
@@ -33,6 +35,11 @@ namespace Robots
         public void ChangeColor(string color)
         {
             this.color = color;
+        }
+
+        public void getPower()
+        {
+            powerLevel = 100;
         }
     }
 }
