@@ -8,9 +8,17 @@ namespace Robots
 {
     abstract class FighterBot : Robot
     {
+        int fightingLevel;
+        int killCount;
+
         public FighterBot()
         {
+            fightingLevel = 0;
+        }
 
+        public void IncrementFightingLevel()
+        {
+            fightingLevel += 1;
         }
     }
 }
