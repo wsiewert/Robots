@@ -14,9 +14,11 @@ namespace Robots
         public FighterBot()
         {
             serialNumber = "F" + serialNumber;
-            material = "CarbonSteel";
+            material = "Vibratium";
             fightingLevel = 0;
             killCount = 0;
+            madeIn = "Skynet - Toranto Canada";
+            isSelfAware = false;
         }
 
         public void IncrementFightingLevel()
@@ -32,6 +34,16 @@ namespace Robots
         public void DisplayKillCount()
         {
             Console.WriteLine("Kill Count: " + killCount);
+        }
+
+        public void IncrementKillCount()
+        {
+            killCount++;
+        }
+
+        public void Terminate()
+        {
+            IncrementKillCount();
         }
     }
 }

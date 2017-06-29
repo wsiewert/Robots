@@ -15,6 +15,10 @@ namespace Robots
             Console.WriteLine("- 'fighter bot'");
             Console.ReadLine();
 
+        }
+
+        public void BootupSequence()
+        {
             Console.CursorLeft = 0;
             Console.Write("[");
             Console.CursorLeft = 30;
