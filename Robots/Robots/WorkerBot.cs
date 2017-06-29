@@ -8,18 +8,23 @@ namespace Robots
 {
     abstract class WorkerBot : Robot
     {
-        string isHelpful;
         int workerLevel;
 
         public WorkerBot()
         {
             serialNumber = "W" + serialNumber;
+            material = "Steel";
             workerLevel = 0;
         }
 
         public void IncrementWorkerLevel(int level)
         {
             workerLevel += level;
+        }
+
+        public void DisplayWorkerLevel()
+        {
+            Console.WriteLine("Worker Level: " + workerLevel);
         }
     }
 }

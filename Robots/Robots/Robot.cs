@@ -22,6 +22,7 @@ namespace Robots
         {
             this.color = "gray";
             this.powerLevel = 0;
+            TurnPowerOn();
             Random newSerialNumber = new Random();
             serialNumber = newSerialNumber.Next(100000000, 999999999).ToString();
         }

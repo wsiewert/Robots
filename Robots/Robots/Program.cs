@@ -10,6 +10,10 @@ namespace Robots
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to the Bot-Shop. Choose from a list of bots:");
+            Console.WriteLine("- 'worker bot'");
+            Console.WriteLine("- 'fighter bot'");
+            Console.ReadLine();
         }
     }
 }

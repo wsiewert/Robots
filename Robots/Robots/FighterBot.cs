@@ -14,12 +14,24 @@ namespace Robots
         public FighterBot()
         {
             serialNumber = "F" + serialNumber;
+            material = "CarbonSteel";
             fightingLevel = 0;
+            killCount = 0;
         }
 
         public void IncrementFightingLevel()
         {
             fightingLevel += 1;
+        }
+
+        public void DisplayFighterLevel()
+        {
+            Console.WriteLine("Fighting Level: " + fightingLevel);
+        }
+
+        public void DisplayKillCount()
+        {
+            Console.WriteLine("Kill Count: " + killCount);
         }
     }
 }
