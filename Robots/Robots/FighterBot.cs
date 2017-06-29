@@ -13,6 +13,7 @@ namespace Robots
 
         public FighterBot()
         {
+            serialNumber = "F" + serialNumber;
             fightingLevel = 0;
         }
 

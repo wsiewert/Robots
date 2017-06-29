@@ -13,6 +13,7 @@ namespace Robots
 
         public WorkerBot()
         {
+            serialNumber = "W" + serialNumber;
             workerLevel = 0;
         }
 

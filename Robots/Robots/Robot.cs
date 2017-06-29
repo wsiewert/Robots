@@ -8,18 +8,22 @@ namespace Robots
 {
     abstract class Robot
     {
-        string oilType;
-        string material;
-        string powerType;
-        string color;
-        int powerLevel;
-        bool powerOn;
-        bool isSelfAware;
+        protected string oilType;
+        protected string material;
+        protected string powerType;
+        protected string color;
+        protected string madeIn;
+        protected string serialNumber;
+        protected int powerLevel;
+        protected bool powerOn;
+        protected bool isSelfAware;
 
         public Robot()
         {
             this.color = "gray";
             this.powerLevel = 0;
+            Random newSerialNumber = new Random();
+            serialNumber = newSerialNumber.Next(100000000, 999999999).ToString();
         }
 
         public void TurnPowerOn()
